@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ResponsiveDesign extends StatefulWidget {
-  const ResponsiveDesign({super.key});
+class ResponsiveDesignView extends StatefulWidget {
+  const ResponsiveDesignView({super.key});
 
   @override
-  State<ResponsiveDesign> createState() => _ResponsiveDesignState();
+  State<ResponsiveDesignView> createState() => _ResponsiveDesignViewState();
 }
 
-class _ResponsiveDesignState extends State<ResponsiveDesign> {
+class _ResponsiveDesignViewState extends State<ResponsiveDesignView> {
   var gap = const SizedBox(
     height: 12,
   );
