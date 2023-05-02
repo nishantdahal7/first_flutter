@@ -75,6 +75,11 @@ class _ArithmeticViewState extends State<ArithmeticView> {
             child: ElevatedButton(
               onPressed: () {
                 add();
+                Navigator.pushNamed(
+                  context,
+                  '/outputView',
+                  arguments: result,
+                );
               },
               child: const Text('ADD'),
             ),
@@ -85,6 +90,11 @@ class _ArithmeticViewState extends State<ArithmeticView> {
             child: ElevatedButton(
               onPressed: () {
                 sub();
+                Navigator.pushNamed(
+                  context,
+                  '/outputView',
+                  arguments: result,
+                );
               },
               child: const Text('SUBTRACT'),
             ),

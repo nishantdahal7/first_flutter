@@ -48,9 +48,7 @@ class DashboardView extends StatelessWidget {
             height: 50,
             width: double.infinity,
             child: ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/circle');
-                },
+                onPressed: () {},
                 child: const Text(
                   "Circle",
                 )),
@@ -109,6 +107,20 @@ class DashboardView extends StatelessWidget {
                 },
                 child: const Text(
                   "ColumnView",
+                )),
+          ),
+          const SizedBox(
+            height: 12,
+          ),
+          SizedBox(
+            height: 50,
+            width: double.infinity,
+            child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/outputView');
+                },
+                child: const Text(
+                  "Output View",
                 )),
           ),
         ],
