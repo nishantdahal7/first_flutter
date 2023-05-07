@@ -48,7 +48,9 @@ class DashboardView extends StatelessWidget {
             height: 50,
             width: double.infinity,
             child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/circleRoute');
+                },
                 child: const Text(
                   "Circle",
                 )),
@@ -117,10 +119,24 @@ class DashboardView extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/outputView');
+                  Navigator.pushNamed(context, '/containerView');
                 },
                 child: const Text(
-                  "Output View",
+                  "Container View",
+                )),
+          ),
+          const SizedBox(
+            height: 12,
+          ),
+          SizedBox(
+            height: 50,
+            width: double.infinity,
+            child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/imageView');
+                },
+                child: const Text(
+                  "Image View",
                 )),
           ),
         ],

@@ -26,7 +26,7 @@ class _OutputViewState extends State<OutputView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Output View"),
+        title: const Text("Output "),
         centerTitle: true,
       ),
       body: Center(

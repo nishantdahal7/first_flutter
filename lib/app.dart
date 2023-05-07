@@ -1,9 +1,10 @@
 import 'package:first_flutter/view/arithmetic_view.dart';
 import 'package:first_flutter/view/circle_view.dart';
 import 'package:first_flutter/view/column_view.dart';
+import 'package:first_flutter/view/container_view.dart';
 import 'package:first_flutter/view/dashboard_view.dart';
+import 'package:first_flutter/view/image_view.dart';
 import 'package:first_flutter/view/name_view.dart';
-import 'package:first_flutter/view/output_view.dart';
 import 'package:first_flutter/view/responsive_design.dart';
 import 'package:first_flutter/view/rich_text_view.dart';
 import 'package:first_flutter/view/si_view.dart';
@@ -21,12 +22,13 @@ class App extends StatelessWidget {
         '/': (context) => const DashboardView(),
         '/siRoute': (context) => const SiView(),
         '/arithmeticRoute': (context) => const ArithmeticView(),
-        '/circle': (context) => const CircleView(),
+        '/circleRoute': (context) => const CircleView(),
         '/responsiveView': (context) => const ResponsiveDesignView(),
         '/nameView': (context) => const NamesButton(),
         '/richText': (context) => const RichTextView(),
         '/columnView': (context) => const ColumnView(),
-        '/outputView': (context) => const OutputView(),
+        '/containerView': (context) => const ContainerView(),
+        '/imageView': (context) => const ImageView(),
       },
     ));
   }
