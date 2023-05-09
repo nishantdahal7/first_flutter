@@ -1,9 +1,11 @@
 import 'package:first_flutter/view/arithmetic_view.dart';
 import 'package:first_flutter/view/circle_view.dart';
+import 'package:first_flutter/view/classwork_view.dart';
 import 'package:first_flutter/view/column_view.dart';
 import 'package:first_flutter/view/container_view.dart';
 import 'package:first_flutter/view/dashboard_view.dart';
 import 'package:first_flutter/view/image_view.dart';
+import 'package:first_flutter/view/media_query_view.dart';
 import 'package:first_flutter/view/name_view.dart';
 import 'package:first_flutter/view/responsive_design.dart';
 import 'package:first_flutter/view/rich_text_view.dart';
@@ -29,6 +31,8 @@ class App extends StatelessWidget {
         '/columnView': (context) => const ColumnView(),
         '/containerView': (context) => const ContainerView(),
         '/imageView': (context) => const ImageView(),
+        '/mediaRoute': (context) => const MediaQueryView(),
+        '/classworkRoute': (context) => const ClassworkView(),
       },
     ));
   }
